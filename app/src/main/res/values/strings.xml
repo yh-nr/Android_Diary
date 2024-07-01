@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Diary</string>
+
+    <string name="fab">追加ボタン</string>
+    <string name="label_date">日付</string>
+    <string name="hint_date">日付を選択</string>
+    <string name="label_feeling">気分は？</string>
+    <string name="feel_great">とても良い</string>
+    <string name="feel_good">良い</string>
+    <string name="feel_normal">普通</string>
+    <string name="feel_bad">悪い</string>
+    <string name="feel_awful">とても悪い</string>
+    <string name="label_action">何をした？</string>
+    <string name="action_work">仕事</string>
+    <string name="action_workout">運動</string>
+    <string name="action_shopping">買い物</string>
+    <string name="action_movie">映画</string>
+    <string name="action_sleep">睡眠</string>
+    <string name="label_diary">日記</string>
+    <string name="hint_diary">ボタンを押すと日記が作成されます。</string>
+    <string name="btn_save">保存</string>
+    <string name="btn_delete">削除</string>
+    <string name="diary_text">%s%s</string>
+    <string name="formatted_date">%d/%02d/%02d</string>
+</resources>

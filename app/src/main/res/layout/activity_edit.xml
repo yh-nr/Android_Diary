@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".EditActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_date" />
+
+    <EditText
+        android:id="@+id/diaryDate"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:focusableInTouchMode="false"
+        android:hint="@string/hint_date"
+        android:importantForAutofill="no"
+        android:inputType="date"
+        android:textColorHint="#8D6E63"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/label_feeling" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp">
+
+        <ImageButton
+            android:id="@+id/feelGreat"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/feel_great"
+            app:srcCompat="@drawable/baseline_sentiment_very_satisfied_24" />
+
+        <ImageButton
+            android:id="@+id/feelGood"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/feel_good"
+            app:srcCompat="@drawable/baseline_sentiment_satisfied_alt_24" />
+
+        <ImageButton
+            android:id="@+id/feelNormal"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/feel_normal"
+            app:srcCompat="@drawable/baseline_sentiment_neutral_24" />
+
+        <ImageButton
+            android:id="@+id/feelBad"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/feel_bad"
+            app:srcCompat="@drawable/baseline_sentiment_dissatisfied_24" />
+
+        <ImageButton
+            android:id="@+id/feelAwful"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/feel_awful"
+            app:srcCompat="@drawable/baseline_sentiment_very_dissatisfied_24" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/label_action" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp">
+
+        <ImageButton
+            android:id="@+id/actionWork"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/action_work"
+            app:srcCompat="@drawable/baseline_work_24" />
+
+        <ImageButton
+            android:id="@+id/actionWorkout"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/action_workout"
+            app:srcCompat="@drawable/baseline_directions_run_24" />
+
+        <ImageButton
+            android:id="@+id/actionShopping"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/action_shopping"
+            app:srcCompat="@drawable/baseline_shopping_cart_24" />
+
+        <ImageButton
+            android:id="@+id/actionMovie"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/action_movie"
+            app:srcCompat="@drawable/baseline_movie_24" />
+
+        <ImageButton
+            android:id="@+id/actionSleep"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/action_sleep"
+            app:srcCompat="@drawable/baseline_bedtime_24" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/label_diary" />
+
+    <EditText
+        android:id="@+id/diaryText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_diary"
+        android:importantForAutofill="no"
+        android:inputType="textMultiLine"
+        android:minHeight="48dp"
+        android:textColorHint="#8D6E63"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/btnSave"
+            style="@style/Widget.Material3.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:text="@string/btn_save" />
+
+        <Button
+            android:id="@+id/btnDelete"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_delete" />
+    </LinearLayout>
+</LinearLayout>
